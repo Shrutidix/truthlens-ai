@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-ivory text-ink font-sans antialiased leading-relaxed; overflow-x: hidden; }
+  h1, h2, h3 { @apply font-serif text-ink tracking-tight; font-weight: 400; line-height: 1.15; }
+  :focus-visible { outline: 2px solid #526B5D; outline-offset: 2px; border-radius: 4px; }
+  ::selection { background: #DCE6DD; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+}
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-page px-5 sm:px-8; }
+  .eyebrow { @apply font-mono text-[11px] tracking-[0.14em] uppercase text-ink-muted; }
+  .card { @apply bg-paper border border-rule rounded-card; }
+  .input { @apply w-full rounded-lg border border-rule bg-paper px-3.5 py-2.5 text-[15px] text-ink placeholder:text-ink-muted/70 transition-colors hover:border-sage/40 focus:border-sage; }
+  .prose-ed { @apply max-w-prose text-[16px] text-ink/90 space-y-4; }
+}

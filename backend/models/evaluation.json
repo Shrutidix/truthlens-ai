@@ -1,0 +1,107 @@
+{
+  "source": "Re-derived from the saved pipeline and bundled sample_data.csv using the same split as src/train.py",
+  "confusion_matrix": {
+    "labels": [
+      "REAL",
+      "FAKE"
+    ],
+    "matrix": [
+      [
+        40,
+        0
+      ],
+      [
+        0,
+        40
+      ]
+    ],
+    "test_size": 80
+  },
+  "metrics_file": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "dataset": {
+    "rows": 400,
+    "class_counts": {
+      "REAL": 200,
+      "FAKE": 200
+    },
+    "synthetic": true,
+    "train_rows": 320,
+    "test_rows": 80
+  },
+  "model": {
+    "vocabulary_size": 511,
+    "top_fake_features": [
+      {
+        "token": "won believe",
+        "coefficient": 2.1142
+      },
+      {
+        "token": "won",
+        "coefficient": 2.1142
+      },
+      {
+        "token": "believe",
+        "coefficient": 2.1142
+      },
+      {
+        "token": "truth",
+        "coefficient": 0.8636
+      },
+      {
+        "token": "one",
+        "coefficient": 0.7659
+      },
+      {
+        "token": "secret",
+        "coefficient": 0.7582
+      },
+      {
+        "token": "shocking",
+        "coefficient": 0.7517
+      },
+      {
+        "token": "claims",
+        "coefficient": 0.7381
+      }
+    ],
+    "top_real_features": [
+      {
+        "token": "report",
+        "coefficient": -1.8909
+      },
+      {
+        "token": "released",
+        "coefficient": -0.9536
+      },
+      {
+        "token": "published",
+        "coefficient": -0.8993
+      },
+      {
+        "token": "months",
+        "coefficient": -0.7285
+      },
+      {
+        "token": "independent",
+        "coefficient": -0.7112
+      },
+      {
+        "token": "reviewed",
+        "coefficient": -0.6933
+      },
+      {
+        "token": "data",
+        "coefficient": -0.685
+      },
+      {
+        "token": "week",
+        "coefficient": -0.6607
+      }
+    ]
+  }
+}

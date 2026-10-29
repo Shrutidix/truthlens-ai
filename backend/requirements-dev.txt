@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest==9.1.1
+httpx==0.28.1
+# only needed for src/train.py, scripts and the legacy Streamlit app
+matplotlib>=3.7
+seaborn>=0.12
+streamlit>=1.28
